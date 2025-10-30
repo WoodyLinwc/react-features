@@ -5,7 +5,16 @@ function App() {
   return (
     <>
       <Navigation />
-      <h1>Hello</h1>
+
+      <div className="section-container">
+        <h2>React Router Setup</h2>
+        <p>s</p>
+      </div>
+
+      <div className="section-container">
+        <h2>React Router CSS</h2>
+        <p></p>
+      </div>
     </>
   );
 }
