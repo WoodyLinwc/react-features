@@ -1,8 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .navigation {
   display: flex;
+  margin: 20px;
   gap: 20px;
 }
 
 .navigation a {
   text-decoration: none;
+  color: blue;
+}
+
+.navigation a.active {
+  font-weight: bold;
 }
