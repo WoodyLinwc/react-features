@@ -5,9 +5,9 @@ function Grandchild({ user }) {
   return (
     <div>
       <p>Hello, {user}!</p>
-      <Link to="https://github.com/WoodyLinwc/react-features/blob/main/react-features/src/components/PropDrilling/PropDrilling.jsx">
+      <a href="https://github.com/WoodyLinwc/react-features/blob/main/react-features/src/components/PropDrilling/PropDrilling.jsx">
         Example Code
-      </Link>
+      </a>
       <p>Using prop drilling from parent to grandchild</p>
     </div>
   );
