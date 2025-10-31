@@ -8,12 +8,20 @@ function App() {
 
       <div className="section-container">
         <h2>React Router Setup</h2>
-        <p>s</p>
+        <a href="https://github.com/WoodyLinwc/react-features/blob/main/react-features/src/main.jsx">
+          main.jsx
+        </a>
+        <br />
+        <a href="https://github.com/WoodyLinwc/react-features/blob/main/react-features/src/components/Navigation.jsx">
+          Navigation.jsx
+        </a>
       </div>
 
       <div className="section-container">
         <h2>React Router CSS</h2>
-        <p></p>
+        <a href="https://github.com/WoodyLinwc/react-features/blob/main/react-features/src/components/Navigation.css">
+          Navigation.css
+        </a>
       </div>
     </>
   );
