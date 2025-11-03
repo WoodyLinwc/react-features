@@ -1,7 +1,7 @@
 import React from "react";
 
-const ObjectMethods = () => {
-  return <div>ObjectMethods</div>;
+const ObjectOperation = () => {
+  return <div>ObjectOperation</div>;
 };
 
-export default ObjectMethods;
+export default ObjectOperation;
