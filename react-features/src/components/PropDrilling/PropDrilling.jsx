@@ -25,13 +25,12 @@ const PropDrilling = () => {
     <div>
       <Navigation />
       <Parent />
-      <CodeBlock code={PropDrillingCode} language="javascript" />
-
       <p>
         <strong>Prop drilling</strong>: the process of passing down props
         through multiple layers of components, even when some of those
         components do not directly use the props.
       </p>
+      <CodeBlock code={PropDrillingCode} language="javascript" />
     </div>
   );
 };
