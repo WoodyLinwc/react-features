@@ -1,7 +1,12 @@
 import React from "react";
+import Navigation from "../Navigation";
 
 const LazyLoading = () => {
-  return <div>LazyLoading</div>;
+  return (
+    <div>
+      <Navigation />
+    </div>
+  );
 };
 
 export default LazyLoading;

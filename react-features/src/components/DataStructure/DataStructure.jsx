@@ -1,7 +1,12 @@
 import React from "react";
+import Navigation from "../Navigation";
 
 const DataStructure = () => {
-  return <div>DataStructure</div>;
+  return (
+    <div>
+      <Navigation />
+    </div>
+  );
 };
 
 export default DataStructure;

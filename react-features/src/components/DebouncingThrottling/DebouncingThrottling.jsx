@@ -1,7 +1,12 @@
 import React from "react";
+import Navigation from "../Navigation";
 
 const DebouncingThrottling = () => {
-  return <div>DebouncingThrottling</div>;
+  return (
+    <div>
+      <Navigation />
+    </div>
+  );
 };
 
 export default DebouncingThrottling;

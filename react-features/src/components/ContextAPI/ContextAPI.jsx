@@ -1,7 +1,12 @@
 import React from "react";
+import Navigation from "../Navigation";
 
 const ContextAPI = () => {
-  return <div>ContextAPI</div>;
+  return (
+    <div>
+      <Navigation />
+    </div>
+  );
 };
 
 export default ContextAPI;
