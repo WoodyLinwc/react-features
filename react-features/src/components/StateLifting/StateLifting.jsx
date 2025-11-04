@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Navigation from "../Navigation";
+import CodeBlock from "../CodeBlock";
+import { StateLiftingCode } from "../CodeBlocks";
 
 function InputA({ value, setText }) {
   return (
@@ -51,10 +53,8 @@ const StateLifting = () => {
         <strong>Why</strong>: React is unidirectional, sibling components cannot
         directly talk to each other
       </p>
-      <a href="https://github.com/WoodyLinwc/react-features/blob/main/react-features/src/components/StateLifting/StateLifting.jsx">
-        Example Code
-      </a>
       <Parent />
+      <CodeBlock code={StateLiftingCode}></CodeBlock>
     </div>
   );
 };
