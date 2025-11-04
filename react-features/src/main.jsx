@@ -17,6 +17,8 @@ import DataStructure from "./components/DataStructure/DataStructure.jsx";
 import ArrayOperation from "./components/DataStructure/ArrayOperation.jsx";
 import ObjectOperation from "./components/DataStructure/ObjectOperation.jsx";
 
+import Coding from "./components/Coding/Coding.jsx";
+
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <Routes>
@@ -34,6 +36,8 @@ createRoot(document.getElementById("root")).render(
       <Route path="/data-structure" element={<DataStructure />} />
       <Route path="/data-structure/array" element={<ArrayOperation />} />
       <Route path="/data-structure/object" element={<ObjectOperation />} />
+
+      <Route path="/coding" element={<Coding />} />
     </Routes>
   </BrowserRouter>
 );
