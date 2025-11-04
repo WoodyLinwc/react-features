@@ -14,6 +14,7 @@ const Navigation = () => {
       <NavLink to="/form-validation">Form Validation</NavLink>
       <NavLink to="/hoc">HOC</NavLink>
       <NavLink to="/lazy-loading">Lazy Loading</NavLink>
+      <NavLink to="/data-fetch">Data Fetch</NavLink>
       <NavLink to="/data-structure">Data Structure</NavLink>
       <NavLink to="/coding">Coding</NavLink>
     </nav>

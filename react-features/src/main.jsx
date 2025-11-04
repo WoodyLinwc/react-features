@@ -13,6 +13,7 @@ import FormValidation from "./components/FormValidation/FormValidation.jsx";
 import HOC from "./components/HOC/HOC.jsx";
 import LazyLoading from "./components/LazyLoading/LazyLoading.jsx";
 import DataStructure from "./components/DataStructure/DataStructure.jsx";
+import DataFetch from "./components/DataFetch/DataFetch.jsx";
 
 import ArrayOperation from "./components/DataStructure/ArrayOperation.jsx";
 import ObjectOperation from "./components/DataStructure/ObjectOperation.jsx";
@@ -32,6 +33,7 @@ createRoot(document.getElementById("root")).render(
       <Route path="/form-validation" element={<FormValidation />} />
       <Route path="/hoc" element={<HOC />} />
       <Route path="/lazy-loading" element={<LazyLoading />} />
+      <Route path="/data-fetch" element={<DataFetch />} />
 
       <Route path="/data-structure" element={<DataStructure />} />
       <Route path="/data-structure/array" element={<ArrayOperation />} />
