@@ -16,7 +16,7 @@ const CodeBlock = ({ code, language = "javascript" }) => {
       customStyle={{
         borderRadius: "8px",
         padding: "1rem",
-        fontSize: "0.9rem",
+        fontSize: "0.8rem",
         lineHeight: "1.5",
         width: "90%",
         maxWidth: "800px",
