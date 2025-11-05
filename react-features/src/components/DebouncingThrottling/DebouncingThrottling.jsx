@@ -6,11 +6,11 @@ import Navigation from "../Navigation";
 function basicDebounce(fn, delay) {
   let timer;
 
-  // (...args)
-  return function () {
+  // (...args) vs ()
+  return function (...args) {
     clearTimeout(timer);
-    // timer = setTimeout(fn(args), delay);
-    timer = setTimeout(fn, delay);
+    // () => fn.apply(this, args) vs fn
+    timer = setTimeout(() => fn.apply(this, args), delay);
   };
 }
 
