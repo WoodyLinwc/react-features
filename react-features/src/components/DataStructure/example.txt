@@ -1,0 +1,133 @@
+Array of Objects Operations
+
+Sort arrayOfObjects by age in ascending order
+Sort arrayOfObjects by city name alphabetically
+Filter arrayOfObjects to get only people older than 25
+Find the person with id 2
+Get an array of just the names from arrayOfObjects
+Calculate the average age of all people
+Group people by city (return an object with city as key)
+Add a new person to the array
+Update Bob Smith's age to 35
+Remove the person with id 3
+Check if anyone is from "Chicago"
+Find the oldest person
+Count how many people are from each city
+Get all unique cities as an array
+
+Array of Strings Operations
+
+Sort arrayOfStrings alphabetically
+Convert all strings to uppercase
+Filter strings that contain the letter 'a'
+Find the longest string
+Check if "Python" exists in the array
+Remove "Java" from the array
+Add "TypeScript" to the beginning of the array
+Join all strings with comma separator
+Get strings that have more than 4 characters
+Reverse the array order
+
+Array of Numbers Operations
+
+Remove all duplicates from arrayOfNumbers
+Sort numbers in descending order
+Find the sum of all numbers
+Get the maximum and minimum values
+Filter numbers greater than 50
+Calculate the average
+Remove all instances of 10
+Double each number in the array
+Find how many times 10 appears
+Get only unique numbers and sort them
+
+Array of Nested Objects Operations
+
+Get all project names from arrayOfNestedObjects
+Find the project with budget greater than 60000
+Get all team members from all projects (flatten into one array)
+Count total completed tasks across all projects
+Find which project has "Tom Hardy" as lead
+Get all tags from all projects (remove duplicates)
+Calculate total budget of all projects
+Update the first task of "Website Redesign" to completed
+Add a new task to the "Mobile App" project
+Get all projects where all tasks are completed
+Find the project with the most team members
+
+Object Contains Objects Operations
+
+Get the user's email from objectContainsObjects
+Update the theme to "light"
+Add a new setting called "fontSize" with value "medium"
+Check if notifications are enabled
+Get all keys from the settings object
+Merge user and settings into one object
+Delete the newsletter preference
+Convert the entire object to a JSON string
+Count how many top-level properties exist
+Create a new object with only user information
+
+Object Contains Arrays Operations
+
+Add a new employee "Eve" to objectContainsArrays
+Remove "Marketing" from departments
+Calculate the total revenue
+Get the highest revenue value
+Check if "Engineering" department exists
+Count the number of employees
+Filter revenues greater than 180000
+Sort employees alphabetically
+Add a new department "Finance"
+Get the average revenue
+
+Object Contains Array of Objects Operations
+
+Find a dish by id in objectContainsArrayOfObjects
+Get all dishes in the "Main Course" category
+Calculate the total price of all menu items
+Sort menu items by price (ascending)
+Add a new menu item
+Update the price of "Burger" to 14.99
+Remove the dish with id 2
+Get all unique categories
+Find the most expensive dish
+Filter dishes cheaper than $10
+Count how many items are in each category
+
+Nested Objects Operations
+
+Get the instructor's name from nestedObjects
+Add a new student to the course
+Calculate the average grade for Emma Wilson
+Find all students with average grade above 85
+Update the course duration to 16 weeks
+Add a new topic "Node.js" to the topics array
+Get all student names
+Check if the course is active
+Remove "CSS" from topics
+Calculate total number of students enrolled
+Find the student with the highest average grade
+Update Liam Brown's first grade to 95
+Get all grades from all students (flattened array)
+Check if "React" is included in topics
+
+Advanced Combined Operations
+
+From arrayOfNestedObjects, create an object where keys are project names and values are team leads
+Merge all team members from arrayOfNestedObjects into a single array without duplicates
+From nestedObjects, calculate each student's average grade and add it as a new property
+Sort objectContainsArrayOfObjects menu by category alphabetically, then by price within each category
+From arrayOfObjects, create an object grouped by city with arrays of people
+Transform arrayOfNestedObjects to include a "completion percentage" for each project
+From nestedObjects, find which topic appears most frequently across all students' interests
+Combine arrayOfObjects and objectContainsArrays.employees into one array of unique names
+Deep clone nestedObjects and modify it without affecting the original
+From arrayOfNestedObjects, extract all incomplete tasks with their project names
+
+These questions cover the most common real-world operations you'll need:
+
+Array methods: map, filter, reduce, find, sort, forEach, some, every
+Object methods: Object.keys, Object.values, Object.entries, spread operator
+String methods: includes, toLowerCase, toUpperCase, split, join
+Advanced operations: grouping, flattening, aggregation, transformation, deep cloning

@@ -17,6 +17,12 @@ export const arrayOfObjects = [
     age: 22,
     city: "Chicago",
   },
+  {
+    id: 4,
+    name: "Johny Chris",
+    age: 28,
+    city: "Chicago",
+  },
 ];
 
 export const arrayOfStrings = [
@@ -139,3 +145,81 @@ export const nestedObjects = {
     isActive: true,
   },
 };
+
+export const arrayOfObjectsCode = `export const arrayOfObjects = [
+  {
+    id: 1,
+    name: "Alice Johnson",
+    age: 28,
+    city: "New York",
+  },
+  {
+    id: 2,
+    name: "Bob Smith",
+    age: 34,
+    city: "Los Angeles",
+  },
+  {
+    id: 3,
+    name: "Carol White",
+    age: 22,
+    city: "Chicago",
+  },
+  {
+    id: 4,
+    name: "Johny Chris",
+    age: 28,
+    city: "Chicago",
+  },
+];
+
+// Modify original: sort()
+// Return new array: toSorted(), filter(), map()
+// Return new reference: find()
+
+// Sort arrayOfObjects by age in ascending order without modify original array
+// [... arrayOfObject.sort()] also works
+const sortByAge = arrayOfObjects.toSorted((a, b) => a.age - b.age);
+
+// Sort arrayOfObjects by city name alphabetically
+arrayOfObjects.sort((a, b) => a.city.localeCompare(b.city));
+
+// Filter arrayOfObjects to get only people older than 25
+const filteredPeople = arrayOfObjects.filter((obj) => obj.age > 25);
+
+// Find the person with id 2
+const findWithID = arrayOfObjects.find((obj) => obj.id === 2);
+
+// Get an array of just the names from arrayOfObjects
+const arrayOfNames = arrayOfObjects.map((obj) => obj.name);
+
+// Calculate the average age of all people
+const averageAge = arrayOfObjects.reduce((acc, obj) => acc + obj.age, 0) / arrayOfObjects.length;
+
+// Group people by city (return an object with city as key)
+// {city: [], city: []}
+const groupByCity = arrayOfObjects.reduce((acc, obj) => {
+  if (!acc[obj.city]) {
+    acc[obj.city] = [];
+  }
+  acc[obj.city].push(obj.name);
+
+  return acc;
+}, {});
+
+// Add a new person to the array
+const newPerson = {
+  id: 5,
+  name: "Daniel Wu",
+  age: 45,
+  city: "Boston",
+};
+
+arrayOfObjects.push(newPerson);
+// in React
+const [people, setPeople] = useState(arrayOfObjects);
+// update immutabily
+useEffect(() => {
+  setPeople((prev) => [...prev, newPerson]);
+}, []);
+`;
