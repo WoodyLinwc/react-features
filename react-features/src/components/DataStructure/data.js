@@ -222,4 +222,15 @@ const [people, setPeople] = useState(arrayOfObjects);
 useEffect(() => {
   setPeople((prev) => [...prev, newPerson]);
 }, []);
+
+// Update Bob Smith's age to 35
+useEffect(() => {
+  // setter function with prev and callback
+  setPeople((prev) =>
+    prev.map((obj) => {
+      // ternary operator, map() requires return for every elements
+      return obj.name === "Bob Smith" ? { ...obj, age: 35 } : obj;
+    })
+  );
+}, []);
 `;
