@@ -32,6 +32,7 @@ export const arrayOfStrings = [
   "C++",
   "Ruby",
   "Go",
+  "java",
 ];
 
 export const arrayOfNumbers = [100, 25, 30, 45, 50, 65, 10, 10, 10, 85, 90];
@@ -174,7 +175,7 @@ export const arrayOfObjectsCode = `export const arrayOfObjects = [
 ];
 
 // Modify original: sort()
-// Return new array: toSorted(), filter(), map()
+// Return new array: toSorted(), filter(), map(), reduce()
 // Return new reference: find()
 
 // Sort arrayOfObjects by age in ascending order without modify original array
@@ -207,6 +208,15 @@ const groupByCity = arrayOfObjects.reduce((acc, obj) => {
   return acc;
 }, {});
 
+// Count how many people are from each city
+const peopleInEachCity = people.reduce((acc, obj) => {
+  if (!acc[obj.city]) {
+    acc[obj.city] = 0;
+  }
+  acc[obj.city]++;
+  return acc;
+}, {});
+
 // Add a new person to the array
 const newPerson = {
   id: 5,
@@ -233,4 +243,45 @@ useEffect(() => {
     })
   );
 }, []);
+
+// Remove the person with id 3
+useEffect(() => {
+  setPeople((prev) => {
+    // {} requires explict return
+    return prev.filter((obj) => obj.id !== 3);
+  });
+}, []);
+
+// Check if anyone is from "Chicago"
+// some() accepts a callback, includes() check specific value for primitive
+people.some((obj) => obj.city === "Chicago")
+
+// Find the oldest person
+// no need for initial value, find min or max
+const oldestPerson = people.reduce((prev, cur) =>
+  cur.age > prev.age ? cur : prev
+);
+
+// Find the oldest person name
+const oldestPersonName = people.reduce((prev, cur) =>
+  prev.age < cur.age ? cur : prev
+).name;
+
+// Get all unique cities as an array
+const uniqueCity = [...new Set(people.map((obj) => obj.city))];
+`;
+
+export const arrayOfStringsCode = `export const arrayOfStrings = [
+  "JavaScript",
+  "Python",
+  "Java",
+  "C++",
+  "Ruby",
+  "Go",
+  "java",
+]
+
+// Sort arrayOfStrings alphabetically
+languages.sort((a, b) => a.localeCompare(b));
+
 `;

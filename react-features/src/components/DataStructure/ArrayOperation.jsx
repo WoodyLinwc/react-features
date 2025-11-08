@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from "react";
 import CodeBlock from "../CodeBlock";
 import Navigation from "../Navigation";
-import { arrayOfObjects, arrayOfObjectsCode } from "./data";
+import {
+  arrayOfObjects,
+  arrayOfObjectsCode,
+  arrayOfStrings,
+  arrayOfStringsCode,
+} from "./data";
 // export const arrayOfObjects = [
 //   {
 //     id: 1,
@@ -21,30 +26,27 @@ import { arrayOfObjects, arrayOfObjectsCode } from "./data";
 //     age: 22,
 //     city: "Chicago",
 //   },
+//   {
+//     id: 4,
+//     name: "Johny Chris",
+//     age: 28,
+//     city: "Chicago",
+//   },
 // ];
 
-// Update Bob Smith's age to 35
+//
 
 const ArrayOperation = () => {
   const [people, setPeople] = useState(arrayOfObjects);
-
-  useEffect(() => {
-    // setter function with prev and callback
-    setPeople((prev) =>
-      prev.map((obj) => {
-        // ternary operator, map() requires return for every elements
-        return obj.name === "Bob Smith" ? { ...obj, age: 35 } : obj;
-      })
-    );
-  }, []);
-
-  console.log(people);
+  // const [languages, setLanguages] = useState(arrayOfStrings);
 
   return (
     <div>
       <Navigation />
       <h2>Array of Objects</h2>
       <CodeBlock code={arrayOfObjectsCode}></CodeBlock>
+      <h2>Array of Strings Operations</h2>
+      <CodeBlock code={arrayOfStringsCode}></CodeBlock>
     </div>
   );
 };
