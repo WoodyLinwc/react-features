@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import CodeBlock from "../CodeBlock";
 import Navigation from "../Navigation";
+import { DiscussionEmbed } from "disqus-react";
 import {
   arrayOfObjects,
   arrayOfObjectsCode,
@@ -47,6 +48,16 @@ const ArrayOperation = () => {
       <CodeBlock code={arrayOfObjectsCode}></CodeBlock>
       <h2>Array of Strings Operations</h2>
       <CodeBlock code={arrayOfStringsCode}></CodeBlock>
+
+      <DiscussionEmbed
+        shortname="react-features"
+        config={{
+          url: window.location.href,
+          identifier: "array-operations",
+          title: "Array Operations",
+          language: "zh_TW",
+        }}
+      />
     </div>
   );
 };
